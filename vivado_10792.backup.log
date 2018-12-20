@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 30 14:06:08 2018
+# Process ID: 10792
+# Current directory: C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11712 C:\Users\Alex\Desktop\WSU_Sem_3\EE_214\Labs\Project11\proj11_task2\proj11_task2.xpr
+# Log file: C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/vivado.log
+# Journal file: C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 719.063 ; gain = 73.961
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z007sclg400-1
+Top: stopwatch
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 851.523 ; gain = 103.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'stopwatch' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/stopwatch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/clk_divider.v:3]
+	Parameter constantNumber bound to: 50000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (1#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/clk_divider.v:3]
+INFO: [Synth 8-6157] synthesizing module 'state_machine' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/state_machine.v:3]
+	Parameter init bound to: 2'b00 
+	Parameter left bound to: 2'b10 
+	Parameter right bound to: 2'b11 
+	Parameter right2 bound to: 2'b01 
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/state_machine.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'state_machine' (2#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/state_machine.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'BCD_counter' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/BCD_counter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_counter' (3#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/BCD_counter.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'display_controller' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/display_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter_2bit' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/counter_2bit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'counter_2bit' (5#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/counter_2bit.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2_4' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/decoder_2_4.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/decoder_2_4.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2_4' (6#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/decoder_2_4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux_4_1' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/mux_4_1.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/mux_4_1.v:14]
+WARNING: [Synth 8-567] referenced signal 'I2' should be on the sensitivity list [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/mux_4_1.v:12]
+WARNING: [Synth 8-567] referenced signal 'I3' should be on the sensitivity list [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/mux_4_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4_1' (7#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/mux_4_1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decoder_7_seg' [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/decoder_7_seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_7_seg' (8#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/decoder_7_seg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'display_controller' (9#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/display_controller.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'stopwatch' (10#1) [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2/proj11_task2.srcs/sources_1/new/stopwatch.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 861.570 ; gain = 113.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 861.570 ; gain = 113.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 861.570 ; gain = 113.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2_master.xdc]
+Finished Parsing XDC File [C:/Users/Alex/Desktop/WSU_Sem_3/EE_214/Labs/Project11/proj11_task2_master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1223.609 ; gain = 475.926
+27 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1223.609 ; gain = 475.926
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 30 15:37:56 2018...
